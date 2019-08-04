@@ -3,6 +3,7 @@ let ul = document.getElementById('ul');
 let clearAll = document.getElementById('clearAllButton');
 let myWeatherButton = document.getElementById('myWeatherButton');
 
+// add new city
 buttonFind.addEventListener('click', function(){   
     if(ul.childElementCount < 8){
         let input = document.getElementById('inputId');
@@ -17,9 +18,9 @@ buttonFind.addEventListener('click', function(){
     .catch((error) => {
         console.log(error);
     })
-   //input.value = '';
+   input.value = '';
     }else{
-        alert('Почисти список');
+        alert('Почисти список!');
 }
 });
 
@@ -41,7 +42,7 @@ myWeatherButton.addEventListener('click', function(){
     }
 })
 
-
+// create delete button
 function deleteButton(){ 
     let liDeleteButton = document.createElement('button');
     liDeleteButton.id = 'liDeleteButton'
