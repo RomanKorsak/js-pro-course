@@ -18,7 +18,6 @@ class Car{
     newAge(value){
         this.year = value;
     }
-
     changeColor(newColor){
         if(this.color === newColor){
             console.log("Машина уже имеет такой цвет!")
@@ -45,10 +44,9 @@ class Car{
     }
 }
 
-
 //BMW FACTORY
 class BMWFactory extends Car {
-    constructor (name, model, year, color, maxSpeed, modelOfEngine, fuelCapacit = 60, fuelConsumption = 10){     //(model, engine, year)
+    constructor (name, model, year, color, maxSpeed, modelOfEngine, fuelCapacit = 60, fuelConsumption = 10){
     super(name, model, year, color, maxSpeed, fuelCapacit, fuelConsumption);
     this.modelOfEngine = modelOfEngine;
     }
@@ -56,8 +54,6 @@ class BMWFactory extends Car {
         console.log("I got " + this.modelOfEngine + " engine!");
     }
 }
-
-
 
 //Mercedes FACTORY
 class MercedesFactory extends Car{
@@ -70,7 +66,6 @@ class MercedesFactory extends Car{
     }
 }
 
-
 // Audi FACTORY
 class AudiFactory extends Car{
     constructor (name, model, year, color, maxSpeed, leatherSeats, colorOfLeatherSeats, fuelCapacit = 60, fuelConsumption = 10){
@@ -82,8 +77,6 @@ class AudiFactory extends Car{
         console.log("Color of my leather seats is " + this.colorOfLeatherSeats + " !");
     }
 }
-
-
 
 //testing
 let newCar = new Car('Lexus', 'LC600', 'black', 2018, 250, 90, 25);  //создаём через CarFactory
