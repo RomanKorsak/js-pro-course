@@ -86,10 +86,10 @@ class AudiFactory extends Car{
 
 
 //testing
-let newCar = new Car('Lexus', 'LC600', 'black', 2018, 250, 90, 25);  //создаём через Car
-let bmw = new BMWFactory('BMW', 'M5', 2017, 'black', 280, 'V8', 85, 18);// через BMW
-let mercedes = new MercedesFactory('Mercedes-Benz', 'S500', 2018, 'gray', 250, 'Long', 90, 21); // через Mercedes
-let audi = new AudiFactory('Audi', 'A6', 2015, 'blue', 260, 'yes', 'brown', 65, 12); // через Audi
+let newCar = new Car('Lexus', 'LC600', 'black', 2018, 250, 90, 25);  //создаём через CarFactory
+let bmw = new BMWFactory('BMW', 'M5', 2017, 'black', 280, 'V8', 85, 18);// через BMWFactory
+let mercedes = new MercedesFactory('Mercedes-Benz', 'S500', 2018, 'gray', 250, 'Long', 90, 21); // через MercedesFactory
+let audi = new AudiFactory('Audi', 'A6', 2015, 'blue', 260, 'yes', 'brown', 65, 12); // через AudiFactory
 
 console.log(newCar);
 console.log(bmw);
