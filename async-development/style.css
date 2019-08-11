@@ -53,3 +53,8 @@ button:active{
 #ulDiv{
     height: 30vw;
 }
+form{
+    display: flex;
+    justify-content: center;
+    width: 58%;
+}

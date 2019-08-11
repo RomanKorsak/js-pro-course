@@ -1,17 +1,23 @@
+
+
 let buttonFind = document.getElementById('buttonId');
 let ul = document.getElementById('ul');
 let clearAll = document.getElementById('clearAllButton');
 let myWeatherButton = document.getElementById('myWeatherButton');
 let input = document.getElementById('inputId');
 
-// add new city
-buttonFind.addEventListener('click', function(){   
-    if(ul.childElementCount < 8){
+
+//add new city
+let form= document.getElementById('formId');
+form.addEventListener('submit', function(event){ 
+    event.preventDefault();
+
+    if(ul.childElementCount < 8){      
         createCity();
     }else{
-        alert('Почисти список!');
+        alert('Почисти список!')   
     }
-});
+})
 
 // my city by location
 myWeatherButton.addEventListener('click', function(){ 
