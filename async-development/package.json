@@ -1,0 +1,19 @@
+{
+  "name": "async-development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/RomanKorsak/js-pro-course/tree/async-development/async-development"
+  },
+  "author": "RomanKorsak",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^16.4.0",
+    "jquery": "^3.4.1"
+  }
+}
