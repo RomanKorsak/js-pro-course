@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 export function AddClicker(){
     let [numOfCounters, setNumOfCounters] = useState([]);
     function add(){
-        setNumOfCounters(numOfCounters = numOfCounters.concat([0]))
+        setNumOfCounters(numOfCounters.concat([0]))
     }
     return(
         <div id = 'digContainerWithButtonAndClicker'>
