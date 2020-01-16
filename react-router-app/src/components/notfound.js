@@ -9,7 +9,6 @@ export function Notfound(){
             let timer = setTimeout(() => {
                 setRedir(redir = true);
             }, 2000);
-            return () => clearTimeout(timer);
         }, [redir])
         
     
